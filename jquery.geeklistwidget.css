@@ -1,0 +1,226 @@
+
+body {
+    color:#000000;
+	font-size:11pt;
+	font-family:Arial;
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.17, rgb(232,232,232)),
+		color-stop(0.91, rgb(241,166,15))
+	);
+	background-image: -moz-linear-gradient(
+		center bottom,
+		rgb(232,232,232) 17%,
+		rgb(241,166,15) 91%
+	);
+}
+h1 {
+	padding-top:24.0pt;
+	color:#000000;
+	font-size:24pt;
+	font-family:Arial;
+	font-weight:bold;
+	padding-bottom:6.0pt
+}
+
+a,
+a:-webkit-any-link {
+	color: #000099;	
+	text-decoration: none;
+	
+	padding: 2px;
+	
+	background: #FFFFFF;
+	-webkit-transition: background-color .5s linear;
+	-webkit-transition-property: background-color;
+	-webkit-transition-duration: 0.5s;
+	-webkit-transition-timing-function: linear;
+	-webkit-transition-delay: initial;
+	
+	border-radius: 4px;  
+	-moz-border-radius: 4px;  
+	-webkit-border-radius: 4px;
+	
+}
+
+a:hover{
+	background: #F1A60F;
+	color: #333333;
+}
+
+a.back2top{
+	font-size: 0.8em;
+	display: block;
+	width: 100%;
+	text-align: right;
+	margin: 5px 0;
+}
+
+#wrapper{
+	width: 600px;
+
+	padding: 10px 40px;
+	margin: 10px auto;
+
+	-moz-border-radius: 10px;  
+	-webkit-border-radius: 10px;
+	border-radius: 10px;  
+	
+	box-shadow: 5px 5px 2px #646464; 
+	-moz-box-shadow: 5px 5px 2px #646464;  
+	-webkit-box-shadow: 5px 5px 2px #646464;
+	
+	background: #FFFFFF;
+	
+}
+
+
+nav ul{
+	clear: both;
+	
+	list-style: disc;
+	list-style-type: disc;
+	list-style-position: inside;
+	padding: 20px 0 0;
+}
+
+nav li{
+	color: #F1A60F;
+	margin-bottom: 4px;	
+}
+
+header div{
+	width: 500px;
+	margin: auto;	
+}
+
+header img{
+	float: left;
+	margin-right: 10px;
+}
+
+header h1,
+#content h3{
+	font-family: 'Pacifico', serif;
+	font-style: normal;
+	font-weight: 400;
+	text-shadow: none;
+	text-decoration: none;
+	text-transform: none;
+	letter-spacing: 0em;
+	word-spacing: 0em;
+}
+
+header h1 {
+	padding: 0;
+	margin: 0;
+	margin-right: 15px;
+	
+	font-size: 3em;
+	line-height: 1.2;
+	
+	float: left;
+}
+
+header h2{
+	padding: 0;
+	padding-top: 10px;
+	
+	font-size: 1.2em;
+	font-weight: 600;
+	color: #f1a60f;
+}
+
+#content h3{
+	clear: both;
+	font-size: 1.4em;
+	line-height: 1.2;
+}
+
+footer{
+	padding: 20px 0;
+	font-size: 0.8em;
+	color: #646464;
+}
+
+/** 
+    AWESOME CSS3 loading spinner
+    taken from: http://kilianvalkhof.com/2010/css-xhtml/css3-loading-spinners-without-images/
+**/
+
+/* position the bars and balls correctly (rotate them and translate them outward)*/
+.bar1 {
+  -moz-transform:rotate(0deg) translate(0, -40px);
+  -webkit-transform:rotate(0deg) translate(0, -40px);opacity:0.12;
+}
+.bar2 {
+  -moz-transform:rotate(45deg) translate(0, -40px);
+  -webkit-transform:rotate(45deg) translate(0, -40px);opacity:0.25;
+}
+.bar3 {
+  -moz-transform:rotate(90deg) translate(0, -40px);
+  -webkit-transform:rotate(90deg) translate(0, -40px);opacity:0.37;
+}
+.bar4 {
+  -moz-transform:rotate(135deg) translate(0, -40px);
+  -webkit-transform:rotate(135deg) translate(0, -40px);opacity:0.50;
+}
+.bar5 {
+  -moz-transform:rotate(180deg) translate(0, -40px);
+  -webkit-transform:rotate(180deg) translate(0, -40px);opacity:0.62;
+}
+.bar6 {
+  -moz-transform:rotate(225deg) translate(0, -40px);
+  -webkit-transform:rotate(225deg) translate(0, -40px);opacity:0.75;
+}
+.bar7 {
+  -moz-transform:rotate(270deg) translate(0, -40px);
+  -webkit-transform:rotate(270deg) translate(0, -40px);opacity:0.87;
+}
+.bar8 {
+  -moz-transform:rotate(315deg) translate(0, -40px);
+  -webkit-transform:rotate(315deg) translate(0, -40px);opacity:1;
+}
+
+
+.geeklist-spinner {
+  position:relative;
+  width:100px;
+  height:100px;
+  margin:25px;
+  -moz-border-radius:100px;
+  -webkit-border-radius:100px;
+  float:left;
+  -ms-transform:scale(0.5);
+  -moz-transform:scale(0.5);
+  -webkit-transform:scale(0.5);
+
+  -webkit-animation-name: rotateThis;
+  -webkit-animation-duration:2s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-timing-function:linear;
+}
+
+.geeklist-spinner div {
+  width:10px;
+  height:30px;
+  background:#000;
+  position:absolute;
+  top:35px;
+  left:45px;
+}
+
+/* shadows for the first spinner */
+.geeklist-spinner div {
+  -moz-box-shadow:black 0 0 4px;
+  -webkit-box-shadow:black 0 0 4px;
+  box-shadow:black 0 0 4px;    
+}
+
+@-webkit-keyframes rotateThis {
+  from {-webkit-transform:scale(0.5) rotate(0deg);}
+  to {-webkit-transform:scale(0.5) rotate(360deg);}
+}
+
