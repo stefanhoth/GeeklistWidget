@@ -43,8 +43,8 @@
             userUrl = buildUserUrl(options.username);
             
             log("Fetching user info from '"+userUrl+"'");
-            
-            $.getJSON(userUrl, function(data) {
+        		
+            $.getJSON( userUrl+"?callback=?", function(data) {
                 log("Received result from user url.");
                 console.log(data);                
             });
@@ -105,7 +105,7 @@
             fetchUserInfo();
         }
         
-        log("Starting jquery.geeklistwidget [version="+options.version+"]");
+        log("Starting jquery.geeklistwidget [version="+version+"]");
         log("Options:");
         log(options);
         
